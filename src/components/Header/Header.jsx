@@ -9,7 +9,7 @@ const Header = () => {
     <div className='header'>
        <div className="headerTitles">
            <Marquee className='headerTitleSm' loop="infinite" gradient="true">Isham gupta first blog Lorem ipsum dolor sit, amet.</Marquee>
-           <span className="headerTitleLg"><marquee direction="left">Blog</marquee></span>
+           <span className="headerTitleLg">Blog</span>
        </div>
        <img className="headerimg"src={headerimg} alt="img" />
     </div>

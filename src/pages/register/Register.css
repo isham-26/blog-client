@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("E:/Blog-website/client/src/images/register.jpg");
+    background: url("../../images/register.jpg");
     background-size: cover;
 }
 .registerTitle{

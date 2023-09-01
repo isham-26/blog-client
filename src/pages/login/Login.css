@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("E:/Blog-website/client/src/images/login.jpg");
+    background: url("../../images/login.jpg");
     background-size: cover;
 }
 .loginTitle{
