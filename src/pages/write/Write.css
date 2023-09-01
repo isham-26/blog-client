@@ -1,0 +1,64 @@
+.write{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+    height: 100vh;
+    width: 100vw;
+    background-color: #d5d3d3;
+
+    
+}
+.writeImg{
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+
+.writeIcon{ 
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+}
+.writeInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Lora', sans-serif;
+   font-style: italic;
+   margin-left: 40px;
+}
+.writeInput:focus{
+    outline: none;
+}
+.writeText:focus{
+    outline: none;
+}
+.writeText{
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Lora', sans-serif;
+   font-style: italic;
+   width: 80vw;
+   border: none;
+    padding: 40px;
+}
+.writeSubmit{
+   margin-top: 50px;
+   padding: 10px;
+   background-color: rgb(0, 143, 143);
+   font-size: 20px;
+   font-family: 'Lora', sans-serif;
+   font-style: italic;
+   border-radius: 7px;
+   color: aliceblue;
+   border: none;
+}

@@ -1,0 +1,75 @@
+
+.login{
+    height: calc(100vh - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("E:/Blog-website/client/src/images/login.jpg");
+    background-size: cover;
+}
+.loginTitle{
+    font-size: 40px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    align-self: center;
+
+}
+.formDiv{
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.loginForm label{
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Lora', sans-serif;
+}
+.loginForm input:focus{
+    outline: none;
+}
+.loginForm input{
+    color: grey;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+.loginSubmit{
+    width: 150px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    align-self: center;
+}
+.formDiv p{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    color: rgb(50, 50, 253);
+    cursor: pointer;
+}
