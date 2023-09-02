@@ -4,6 +4,8 @@
 .singlePostWreper{
     padding: 20px;
     padding-right:0 ;
+    display: flex;
+    flex-direction: column;
 }
 .singlePostWreper img{
     width: 100%;
@@ -15,6 +17,19 @@
     font-family: 'Lora',sans-serif;
     font-style: italic;
     color: rgb(35, 35, 255);
+}
+.singlePostEditInput{
+    font-family: 'Lora',sans-serif;
+    color: rgb(35, 35, 255);
+    margin: 10px;
+    font-size: 32px;
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid rgb(35, 35, 255);
+
+}
+.singlePostEditInput:focus{
+    outline: none;
 }
 .singlePostEdit{
     display: flex;
@@ -54,9 +69,31 @@
     margin-top: 10px;
     color: rgb(88, 87, 87);
 }
+.textEditInput{
+    font-family: 'Lora', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.textEditInput:focus{
+    outline: none;
+}
 .singlePostWreper p::first-letter{
    
     font-size: 30px;
     margin-left: 20px;
     font-weight: 600;
+    
+}
+.updateButton{
+    width: 70px;
+    border: none;
+    background-color: teal;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    cursor: pointer;
+    align-self: flex-end;
 }

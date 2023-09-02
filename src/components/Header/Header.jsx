@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <div className='header'>
        <div className="headerTitles">
-           <Marquee className='headerTitleSm' loop="infinite" gradient="true">Isham gupta first blog Lorem ipsum dolor sit, amet.</Marquee>
-           <span className="headerTitleLg">Blog</span>
+           <span><Marquee className='headerTitleSm' loop="infinite" gradient="true">Isham gupta first blog website</Marquee></span>
+           <span className="headerTitleLg"><Marquee loop="infinite" speed={35}> Blogs</Marquee></span>
        </div>
        <img className="headerimg"src={headerimg} alt="img" />
     </div>

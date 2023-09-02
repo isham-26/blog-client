@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./TopBar.css";
 import facebook from "../../icons/facebook.png";
 import instagram from "../../icons/instagram.png";
 import twitter from "../../icons/twitter.png";
 import search from "../../icons/search.png";
 import pinterest from "../../icons/pinterest.png";
-import topimg from "../../images/topbar-img.jpg";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 const TopBar = () => {
-  const user = false;
+  const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:8000/images/"
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
   return (
     <div className="top">
       <div className="topleft">
@@ -39,12 +43,16 @@ const TopBar = () => {
               WRITE
             </Link>
           </li>
-          <li className="toplistItem">{user && "LOGOUT"}</li>
+          <li className="toplistItem" onClick={handleLogout}>
+            {user && "LOGOUT"}
+          </li>
         </ul>
       </div>
       <div className="topRight">
         {user ? (
-          <img className="topimg" src={topimg} alt="img" />
+          <Link to={"/setting"}>
+            <img className="topimg" src={PF+user.profilePic} alt="img" />
+          </Link>
         ) : (
           <ul className="toplist">
             <li className="toplistItem">

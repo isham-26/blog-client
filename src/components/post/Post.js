@@ -1,22 +1,27 @@
 import "./post.css";
-import postimg from "../../images/postimg.jpg";
-const Post = () => {
+import {Link} from "react-router-dom"
+// import postimg from "../../images/postimg.jpg";
+const Post = ({ post }) => {
+  const PF="http://localhost:8000/images/"
   return (
     <div className="post">
-      <img src={postimg} alt="img" />
+      {post.photo && <img src={PF+post.photo} alt="img" />}
       <div className="postdata">
         <div className="postinfo">
           <div className="postcats">
-            <span className="postcat">Coding</span>
-            <span className="postcat">Life</span>
+            {post.categories.map((ele) => (
+              <span className="postcat">Coding</span>
+            ))}
           </div>
-          <span className="postTitle">Lorem ipsum dolor sit amet.</span>
+          <Link to={`/post/${post._id}`} className="link">            
+            <span className="postTitle">{post.title}</span>
+          </Link>
           <hr />
         </div>
-        <p className="postdesc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium sequi a temporibus officiis minima dolorem aperiam labore fugiat dolore, aut et quod perspiciatis blanditiis magni enim commodi laudantium fuga ullam autem, voluptatibus sunt? Eum iure unde veniam et cumque numquam earum possimus reiciendis inventore, dolorem aliquid dicta excepturi accusantium, officiis iusto eveniet cum ad odit commodi placeat saepe ut.
-        </p>
-        <div className="postdate"><span title="Post time">1 hour ago</span></div>
+        <p className="postdesc">{post.desc}</p>
+        <div className="postdate">
+          <span title="Post time">{ new Date(post.createdAt).toDateString()}</span>
+        </div>
       </div>
     </div>
   );

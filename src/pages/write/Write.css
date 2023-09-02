@@ -32,7 +32,6 @@
     margin-top: 20px;
     border-radius: 10px;
     font-family: 'Lora', sans-serif;
-   font-style: italic;
    margin-left: 40px;
 }
 .writeInput:focus{
@@ -46,7 +45,6 @@
     margin-top: 20px;
     border-radius: 10px;
     font-family: 'Lora', sans-serif;
-   font-style: italic;
    width: 80vw;
    border: none;
     padding: 40px;
